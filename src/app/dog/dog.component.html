@@ -1,0 +1,14 @@
+<h3>{{ properties.name }}</h3>
+<img [src]="properties.thumbnail" />
+<button
+  [ngClass]="{ btn: true, 'btn-light': !isFavorite, 'btn-danger': isFavorite }"
+  (click)="favorite()"
+>
+  <i class="far fa-heart"></i> Favorite
+</button>
+<button
+  [ngClass]="{ btn: true, 'btn-light': !isFavorite, 'btn-danger': isFavorite }"
+  (click)="like()"
+>
+  <i class="far fa-heart"></i> Like
+</button>
